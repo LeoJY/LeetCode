@@ -9,6 +9,7 @@
 
 using namespace std;
 
+//randomization
 class Solution {
 public:
     int majorityElement(vector<int>& nums) {
