@@ -33,8 +33,6 @@ class Solution {
 int main()
 {
 	Solution testcase;
-	vector<int>temp(2, -1);				// {-1, -1} vector used to compare and decide whether it is no match or not
-	
 	//input the  array
 
 	cout << "input the test case array size:" << endl;

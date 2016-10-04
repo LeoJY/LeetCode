@@ -63,7 +63,7 @@ int main()
 	//generate the vector
 	vector <int> testvector(testarray,testarray + testarraysize); 
 
-	//call the twoSum function
+	//call the function
 	int testresult = testcase. threeSumClosest(testvector, testtarget);
 	if (testresult != 2147483647)
 	{

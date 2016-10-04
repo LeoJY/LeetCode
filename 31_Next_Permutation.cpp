@@ -60,7 +60,7 @@ int main()
 	//generate the vector
 	vector <int> testvector(testarray,testarray + testarraysize); 
 
-	//call the twoSum function
+	//call the function
 	testcase.nextPermutation(testvector);
 
 	//show the result

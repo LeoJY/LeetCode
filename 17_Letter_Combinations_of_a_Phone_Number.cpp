@@ -38,7 +38,7 @@ int main()
 	cout << "input the string (EOL = $)" << endl;
 	getline(cin, teststring, '$');
 
-	//call the twoSum function
+	//call the function
 	vector<string> testresult = testcase.letterCombinations(teststring);
 	
  	cout << "the result is:"  << endl;

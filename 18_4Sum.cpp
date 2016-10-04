@@ -69,7 +69,7 @@ int main()
 	//generate the vector
 	vector <int> testvector(testarray,testarray + testarraysize); 
 
-	//call the twoSum function
+	//call the function
 	vector<vector<int>> testresult = testcase.fourSum(testvector, testtarget);
 
 	for (int i = 0; i < testresult.size(); ++i)
