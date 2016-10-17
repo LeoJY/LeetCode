@@ -5,10 +5,10 @@
 #include <vector>
 
 using namespace std;
-
+/*
 class Solution {
 public:
-  int superPow(int a, vector<int>& b) {
+	int superPow(int a, vector<int>& b) {
   	int temp = 0, result = 1;
   	for (int i : b){
   		temp = (temp * 10 + i) % 1140;
@@ -16,8 +16,30 @@ public:
   	a %= 1337;
   	while (temp--) result = (result * a) % 1337; 
   	return result;
-  }
+  	}
 };
+*/
+class Solution {
+public:
+ 	int superPow(int a, vector<int>& b) {
+ 		if (b.empty()) return 1;
+ 		int lastDigit = b.back();
+ 		b.pop_back();
+ 		return ((powMod(superPow(a, b), 10) * powMod(a, lastDigit)) % 1337);
+	}
+private:
+	int powMod (int a, int k){
+		a %= 1337;
+		int result = 1;
+		while (k){
+			result = (result * a) % 1337;
+			k--;
+		}
+		return result;
+	}
+};
+
+
 
 int main(){
 	Solution testCase;
