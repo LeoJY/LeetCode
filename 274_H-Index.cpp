@@ -35,7 +35,8 @@ int main(){
 	while (cin >> inputNum && inputNum != -9999){
 		testVector.push_back(inputNum);
 	}
-	int testResult = testCase.hIndex(testVector);
+
+    int testResult = testCase.hIndex(testVector);
 	cout << "the result is " << testResult << endl;
 	return 0;
 }
