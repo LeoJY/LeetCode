@@ -40,6 +40,7 @@ int main(){
 	string testPattern, testStr;
 	cout << "please input the testPattern" << endl;
 	getline(cin, testPattern);	
+    cout << testPattern << endl;
 	cout << "please input the testStr" << endl;
 	getline(cin, testStr);
 	bool testResult = testCase.wordPattern(testPattern, testStr);
